@@ -1,0 +1,31 @@
+ACCURACY FROM MULTIPLE MODELS
+
+KNN accuracy  - 0.971608832808 ~ 97.16%
+
+Decision Tree - 0.970031545741 ~ 97.00%
+
+Random Forest - 0.977917981073 ~ 97.80%
+
+GaussianNB    - 0.929022082019 ~ 92.90%
+
+MultinomialNB - 0.507886435331 ~ 50.78%
+
+BernoulliNB   - 0.881703470032 ~ 88.17%
+
+SVM - Linear  - 0.976340694006 ~ 97.63%
+
+SVM - RBF     - 0.968454258675 ~ 96.84%
+
+SVM - Poly    - 0.958990536278 ~ 95.90%
+
+----------------------------------------------------------------------
+RESULT
+
+Random forest model will predict the voice of a person with 98% in comparison with the above models. 
+
+----------------------------------------------------------------------
+REASON
+
+Random forests fit data better from the get-go without transforms/ scaling in this case.
+
+SVM with Linear kernel was close but random forests can be used to fit more data, it depends on the dataset, the datset consists of 2 class predictor variable with a good distribution but with a few outliers, therefore random forests were able to fit those outliers and predict better than SVM-Linear model.
